@@ -1,0 +1,11 @@
+name: Lab-CI-Automation
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Environment Setup
+        run: echo "Automated build and test for Mohammed's lab is starting..."
+      - name: Python Test
+        run: python --version
